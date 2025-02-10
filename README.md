@@ -120,3 +120,20 @@ fly version
 ## Deployment
 
 Unter [hellospring.fly.dev](https://hellospring.fly.dev/) kann das Projekt eingesehen werde.
+
+## Code anpassen
+
+Eine Anpassung des Codes erfordert folgende Schritte, bis diese "live" ist:
+
+1. File ändern, speichern
+2. Build und Test mit `mvn test`
+3. Package mit `mvn clean package` anstossen, um das *.jar zu generieren
+4. Docker-Image aktualisieren mit `docker build -t myproject .`
+5. Image lokal testen mit `docker run -p 8080:8080 myproject`
+6. Bereitstellen mit `flyctl deploy` 
+
+Mit folgendem Befehl ggf. das Image auf der GHCR aktualisieren:
+
+```bash
+flyctl deploy --image ghcr.io/USERNAME/myproject:latest
+```

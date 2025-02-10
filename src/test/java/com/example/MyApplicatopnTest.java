@@ -19,6 +19,6 @@ class MyApplicationTest {
     void home_shouldReturnHelloWorld() throws Exception {
         mockMvc.perform(get("/"))
                 .andExpect(status().isOk()) // Erwartet HTTP 200 OK
-                .andExpect(content().string("Hello World!")); // Erwartet den String "Hello World!"
+                .andExpect(content().string("Hello Spring!")); // Erwartet den String "Hello World!"
     }
 }
