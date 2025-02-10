@@ -40,7 +40,7 @@ mvn clean
 
 ## Code von Anwendung und Controller
 
-Eine einzelne Java-Datei reicht bereits. Standardmässig kompiliert Quellen aus `src/main/java`, daher musste diese Verzeichnisstruktur manuell erstellt werden sowie ebenfalls das Package `com.example`. Zu guter Letzt kamm die Datei [MyApplication.java](src/main/java/com/example/MyApplication.java) hinzufügen, welche Spring durch folgende Annotations einbindet.
+Eine einzelne Java-Datei reicht bereits. Standardmässig kompiliert Quellen aus `src/main/java`, daher musste diese Verzeichnisstruktur manuell erstellt werden sowie ebenfalls das Package `com.example`. Zu guter Letzt kam die Datei [MyApplication.java](src/main/java/com/example/MyApplication.java) hinzufügen, welche Spring durch folgende Annotations einbindet.
 
 ```java
 @RestController
