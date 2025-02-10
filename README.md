@@ -90,3 +90,17 @@ Test mit folgendem Befehl ausführen:
 ```bash
 mvn test
 ```
+
+## Docker
+
+Docker-Image bauen:
+
+```bash
+docker build -t myproject .
+```
+
+Container starten:
+
+```bash
+docker run -p 8080:8080 myproject
+```
