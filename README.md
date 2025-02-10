@@ -104,3 +104,19 @@ Container starten:
 ```bash
 docker run -p 8080:8080 myproject
 ```
+
+Einloggen für GitHub Container-Registry
+
+```bash
+docker login ghcr.io -u USERNAME
+```
+
+Sicherstellen, dass Fly läuft
+
+```bash
+fly version
+```
+
+## Deployment
+
+Unter [hellospring.fly.dev](https://hellospring.fly.dev/) kann das Projekt eingesehen werde.
